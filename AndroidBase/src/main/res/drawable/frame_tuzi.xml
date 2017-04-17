@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 美团的序列帧动画 -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/img_refresh1"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh2"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh3"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh4"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh5"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh6"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh7"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh8"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh9"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh10"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh11"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh12"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh13"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh14"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh15"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh16"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh17"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh18"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh19"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh20"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh21"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh22"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh23"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh24"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/img_refresh25"
+        android:duration="100" />
+</animation-list>
+

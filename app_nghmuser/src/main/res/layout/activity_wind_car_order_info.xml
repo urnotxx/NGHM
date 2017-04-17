@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zzx.haoniu.app_nghmuser.activity.WindCarOrderInfoActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_wind_car_order_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_navigation" />
+
+        <include layout="@layout/layout_xian" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/tvAllW"
+                style="@style/windCarText"
+                android:text="全部"
+                android:textColor="@color/colorRed" />
+
+            <TextView
+                android:id="@+id/tvNotStartW"
+                style="@style/windCarText"
+                android:text="未开始" />
+
+            <TextView
+                android:id="@+id/tvOrdeingW"
+                style="@style/windCarText"
+                android:text="行驶中" />
+
+            <TextView
+                android:id="@+id/tvFinW"
+                style="@style/windCarText"
+                android:text="已完成" />
+
+        </LinearLayout>
+
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+            android:id="@+id/mRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

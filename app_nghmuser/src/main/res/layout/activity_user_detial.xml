@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_detial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zzx.haoniu.app_nghmuser.activity.UserDetialActivity">
+
+    <include layout="@layout/common_navigation" />
+
+    <include layout="@layout/layout_xian" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:id="@+id/llHeadUD"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civHeadUD"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/img_userhead" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="修改头像"
+                android:textColor="@color/colorGrayText68"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_xian" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                style="@style/grayText"
+                android:text="昵称" />
+
+            <EditText
+                android:id="@+id/edNameUD"
+                style="@style/blackEdit"
+                android:hint="昵称" />
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_xian" />
+
+        <LinearLayout
+            android:id="@+id/llSexUD"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                style="@style/grayText"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/tvSexUD"
+                style="@style/grayText"
+                android:text="男or女"
+                android:textColor="@color/colorGrayText68" />
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_xian" />
+
+        <LinearLayout
+            android:id="@+id/llAgeUD"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                style="@style/grayText"
+                android:text="邮箱" />
+
+            <EditText
+                android:id="@+id/edMailbox"
+                style="@style/blackEdit"
+                android:hint="添加邮箱"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/tvAgeUD"
+                style="@style/grayText"
+                android:hint="几零后"
+                android:textColor="@color/colorGrayText68"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/llDustryUD"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                style="@style/grayText"
+                android:text="行业" />
+
+            <TextView
+                style="@style/grayText"
+                android:layout_width="wrap_content"
+                android:hint="添加您的行业"
+                android:textColor="@color/colorGrayText68" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/img_jiantou" />
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_xian" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                style="@style/grayText"
+                android:text="公司" />
+
+            <EditText
+                android:id="@+id/edCompany"
+                style="@style/blackEdit"
+                android:hint="添加所在公司" />
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_xian" />
+
+        <LinearLayout
+            android:id="@+id/llOccupationUD"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                style="@style/grayText"
+                android:text="职业" />
+
+            <EditText
+                android:id="@+id/edOccupationUD"
+                style="@style/blackEdit"
+                android:hint="添加您的职业" />
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_xian" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                style="@style/grayText"
+                android:text="根性签名" />
+
+            <EditText
+                android:id="@+id/edAutographUD"
+                style="@style/blackEdit"
+                android:hint="还未填写个性签名,简单介绍下自己吧" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

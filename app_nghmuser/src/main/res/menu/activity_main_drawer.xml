@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@mipmap/img_wallet"
+            android:title="钱包" />
+        <item
+            android:id="@+id/nav_trip"
+            android:icon="@mipmap/img_mytrip"
+            android:title="我的行程" />
+        <item
+            android:id="@+id/nav_kefu"
+            android:icon="@mipmap/img_kefu"
+            android:title="客服中心" />
+        <item
+            android:id="@+id/nav_set"
+            android:icon="@mipmap/img_set"
+            android:title="我的设置" />
+    </group>
+
+</menu>

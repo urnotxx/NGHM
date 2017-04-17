@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_name_authentication"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.zzx.haoniu.app_nghmuser.activity.NameAuthenticationActivity">
+
+    <include layout="@layout/common_navigation" />
+
+    <include layout="@layout/layout_xian" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:background="@mipmap/img_idcard" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份认证"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="仅支持中国公民身份证进行实名认证"
+                android:textColor="@color/colorGrayText68"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorGrayM" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真实姓名"
+            android:textColor="@color/colorGrayText68"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edNameNA"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shap_tran_5"
+            android:hint="填写姓名"
+            android:paddingLeft="15dp"
+            android:textColor="@color/colorGrayText48"
+            android:textColorHint="@color/colorGrayText88"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="真实身份证号码"
+            android:textColor="@color/colorGrayText68"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edCardNumNA"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shap_tran_5"
+            android:hint="填写18位身份证号"
+            android:paddingLeft="15dp"
+            android:textColor="@color/colorGrayText48"
+            android:textColorHint="@color/colorGrayText88"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvExamineNA"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shap_darkgray_5"
+            android:gravity="center"
+            android:text="提交审核"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

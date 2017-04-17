@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.zzx.haoniu.hzcxkuaiche.activity.RegisterNextActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_register_next"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/common_navigation" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="75dp"
+            android:layout_marginTop="70dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <include layout="@layout/layout_xian" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            style="@style/grayText"
+                            android:text="姓名"
+                            android:textColor="@color/colorGrayText48" />
+
+                        <EditText
+                            android:id="@+id/edNameRN"
+                            style="@style/registerEdit"
+                            android:hint="填写姓名" />
+                    </LinearLayout>
+
+                    <include layout="@layout/layout_xian" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            style="@style/grayText"
+                            android:text="身份证号"
+                            android:textColor="@color/colorGrayText48" />
+
+                        <EditText
+                            android:id="@+id/edCardNumRN"
+                            style="@style/registerEdit"
+                            android:hint="填写本人身份证号码" />
+                    </LinearLayout>
+
+                    <include layout="@layout/layout_xian" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            style="@style/grayText"
+                            android:text="车牌号"
+                            android:textColor="@color/colorGrayText48" />
+
+                        <EditText
+                            android:id="@+id/edCarPlatRN"
+                            style="@style/registerEdit"
+                            android:hint="请填写车牌号" />
+                    </LinearLayout>
+
+                    <include layout="@layout/layout_xian" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            style="@style/grayText"
+                            android:text="车架号"
+                            android:textColor="@color/colorGrayText48" />
+
+                        <EditText
+                            android:id="@+id/edIdenCodeRN"
+                            style="@style/registerEdit"
+                            android:hint="请填写车架号"
+                            android:inputType="text" />
+                    </LinearLayout>
+
+                    <include layout="@layout/layout_xian" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            style="@style/grayText"
+                            android:text="车辆颜色"
+                            android:textColor="@color/colorGrayText48" />
+
+                        <EditText
+                            android:id="@+id/edCarColorRN"
+                            style="@style/registerEdit"
+                            android:hint="请填写车辆颜色" />
+                    </LinearLayout>
+
+                    <include layout="@layout/layout_xian" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            style="@style/grayText"
+                            android:text="行驶里程"
+                            android:textColor="@color/colorGrayText48" />
+
+                        <EditText
+                            android:id="@+id/edCarMileageRN"
+                            style="@style/registerEdit"
+                            android:hint="请填写行驶里程"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <include layout="@layout/layout_xian" />
+
+                    <LinearLayout
+                        android:id="@+id/llSexUD"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            style="@style/grayText"
+                            android:text="性别" />
+
+                        <TextView
+                            android:id="@+id/tvSexUD"
+                            style="@style/grayText"
+                            android:text="男"
+                            android:textColor="@color/colorGrayText68" />
+
+                    </LinearLayout>
+
+                    <include layout="@layout/layout_xian" />
+
+                    <LinearLayout
+                        android:id="@+id/rlBrandRN"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            style="@style/grayText"
+                            android:text="汽车品牌" />
+
+                        <TextView
+                            android:id="@+id/tvCarBrandRN"
+                            style="@style/grayText"
+                            android:layout_width="0dp"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:background="@mipmap/img_jiantou" />
+
+
+                    </LinearLayout>
+
+                    <include layout="@layout/layout_xian" />
+
+                    <LinearLayout
+                        android:id="@+id/rlCityRN"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            style="@style/grayText"
+                            android:text="所属地区" />
+
+                        <TextView
+                            android:id="@+id/tvCarCityRN"
+                            style="@style/grayText"
+                            android:layout_width="0dp"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:background="@mipmap/img_jiantou" />
+
+                    </LinearLayout>
+
+
+                    <include layout="@layout/layout_xian" />
+
+                    <TextView
+                        style="@style/ownerGrayText1"
+                        android:layout_height="45dp"
+                        android:text="驾驶证照片" />
+
+                    <ImageView
+                        android:id="@+id/ivJiaShiRN"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@mipmap/img_photochoose"
+                        android:scaleType="centerCrop" />
+
+                    <include layout="@layout/layout_xian" />
+
+                    <TextView
+                        style="@style/ownerGrayText1"
+                        android:layout_height="45dp"
+                        android:text="行驶证照片" />
+
+                    <ImageView
+                        android:id="@+id/ivXingShiRN"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@mipmap/img_photochoose"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        style="@style/ownerGrayText1"
+                        android:layout_height="45dp"
+                        android:text="车辆信息" />
+
+                    <ImageView
+                        android:id="@+id/ivCarPhoneRN"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@mipmap/img_photochoose"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tvRegisterRN"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/border_redgray5"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

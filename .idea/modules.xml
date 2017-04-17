@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidBase/AndroidBase.iml" filepath="$PROJECT_DIR$/AndroidBase/AndroidBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NGHM.iml" filepath="$PROJECT_DIR$/NGHM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_nghmuser/app_nghmuser.iml" filepath="$PROJECT_DIR$/app_nghmuser/app_nghmuser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hzcxdj/hzcxdj.iml" filepath="$PROJECT_DIR$/hzcxdj/hzcxdj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hzcxkuaiche/hzcxkuaiche.iml" filepath="$PROJECT_DIR$/hzcxkuaiche/hzcxkuaiche.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nghmtaxi/nghmtaxi.iml" filepath="$PROJECT_DIR$/nghmtaxi/nghmtaxi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/takephoto_library/takephoto_library.iml" filepath="$PROJECT_DIR$/takephoto_library/takephoto_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xRefreshView/xRefreshView.iml" filepath="$PROJECT_DIR$/xRefreshView/xRefreshView.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000" >
+
+    <FrameLayout
+        android:id="@+id/android_base_flCamera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000" >
+
+        <SurfaceView
+            android:id="@+id/android_base_surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/android_base_bottom_btncontainer"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <LinearLayout
+                android:id="@+id/android_base_llFocuse"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left|bottom"
+                android:layout_margin="10dp"
+                android:background="@drawable/android_base_camera_foucse"
+                android:onClick="onClickByCamera"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/android_base_llPZ"
+                android:layout_width="74dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/android_base_camera_pz"
+                android:onClick="onClickByCamera"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/android_base_llBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right|bottom"
+                android:layout_margin="10dp"
+                android:background="@drawable/android_base_camera_back"
+                android:onClick="onClickByCamera"
+                android:orientation="horizontal" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/android_base_flPicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" >
+
+        <uk.co.senab.photoview.PhotoView
+            android:id="@+id/android_base_imageZoom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:id="@+id/android_base_llNo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left|bottom"
+            android:layout_margin="10dp"
+            android:background="@drawable/android_base_camera_no"
+            android:onClick="onClickByCamera"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/android_base_llYes"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="10dp"
+            android:background="@drawable/android_base_camera_yes"
+            android:onClick="onClickByCamera"
+            android:orientation="horizontal" />
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zzx.haoniu.nghmtaxi.activity.MyCarActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_my_car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_navigation" />
+
+        <LinearLayout
+            android:id="@+id/llDateMC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/myCarText1"
+                    android:text="车牌号" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tvPlatMC"
+                    style="@style/myCarText2"
+                    android:text=" " />
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_xian" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/myCarText1"
+                    android:text="车型" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tvCarModelMC"
+                    style="@style/myCarText2"
+                    android:text=" " />
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_xian" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/myCarText1"
+                    android:text="车辆所有人" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tvBelongMC"
+                    style="@style/myCarText2"
+                    android:text=" " />
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_xian" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/myCarText1"
+                    android:text="车辆注册日期" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tvRegisterDateMC"
+                    style="@style/myCarText2"
+                    android:text=" " />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/myCarText1"
+                    android:text="司机姓名" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tvNameMC"
+                    style="@style/myCarText2"
+                    android:text=" " />
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_xian" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

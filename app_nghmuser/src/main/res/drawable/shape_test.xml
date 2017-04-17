@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 设置渐变填充色 -->
+    <corners android:radius="10dp" />
+    <gradient
+        android:centerColor="#5AB6FC"
+        android:endColor="#437DB4"
+        android:startColor="#437DB4" />
+</shape>

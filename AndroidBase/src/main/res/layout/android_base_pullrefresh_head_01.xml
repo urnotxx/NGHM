@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/android_base_llPullRefreshHead"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <!--<pl.droidsonroids.gif.GifImageView-->
+            <!--android:id="@+id/android_base_imgArrow"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:src="@drawable/android_base_esc"-->
+            <!--android:visibility="gone" />-->
+            <!--android:background="@anim/frame_meituan"-->
+            <ImageView
+                android:id="@+id/mImageView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="想送哪里就送哪里"
+                    android:textColor="#cecece"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/android_base_tvPullState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="下拉刷新"
+                    android:textColor="#cecece"
+                    android:textSize="13dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/android_base_tvUpdateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="最后一次刷新时间"
+            android:textColor="#cecece"
+            android:textSize="12dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.zzx.haoniu.hzcxdj.activity.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="欢迎登录!"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shap_tran_5"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edPhoneL"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/transparent"
+            android:drawableLeft="@mipmap/img_phone"
+            android:drawablePadding="10dp"
+            android:hint="请输入11位手机号"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorGrayText28"
+            android:textColorHint="@color/colorGrayText68"
+            android:textSize="15sp" />
+
+        <include layout="@layout/layout_xian" />
+
+        <EditText
+            android:id="@+id/edPwdL"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/transparent"
+            android:drawableLeft="@mipmap/img_lock"
+            android:drawablePadding="10dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorGrayText28"
+            android:textColorHint="@color/colorGrayText68"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvForPwdL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:text="@string/forgetPwd"
+        android:textColor="@color/colorRed" />
+
+    <TextView
+        android:id="@+id/tvLoginL"
+        style="@style/redText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/border_redgray0"
+        android:text="立即登陆" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <CheckBox
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/checkbox_dot"
+            android:button="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="同意"
+            android:textColor="@color/colorGrayText48"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvAgreementL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="《科硕约车-代驾平台服务协议》"
+            android:textColor="@color/colorRed"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRegisterTaxiL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:text="注册"
+        android:textColor="@color/colorRed"
+        android:textSize="15sp" />
+
+</LinearLayout>

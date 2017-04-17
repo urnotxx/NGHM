@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/android_base_llMenuBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <LinearLayout
+        android:id="@+id/android_base_llMenuPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/android_base_menu_bg_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/android_base_imgIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/android_base_tvDialogTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical|left"
+                android:text="标题"
+                android:textColor="#168ADA"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#168ADA" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/android_base_tvDialogContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/android_base_menu_bg_center"
+            android:gravity="center_vertical|left"
+            android:minHeight="70dp"
+            android:padding="20dp"
+            android:text="内存"
+            android:textColor="#444"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:id="@+id/android_base_otherViewContainer"
+            android:orientation="vertical"
+             android:background="@drawable/android_base_menu_bg_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#999999" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/android_base_llDialogBtns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

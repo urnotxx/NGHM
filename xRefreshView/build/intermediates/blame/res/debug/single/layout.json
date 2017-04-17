@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\studio\\NGHM\\xRefreshView\\build\\intermediates\\res\\merged\\debug\\layout\\xrefreshview_header.xml",
+        "source": "D:\\studio\\NGHM\\xRefreshView\\src\\main\\res\\layout\\xrefreshview_header.xml"
+    },
+    {
+        "merged": "D:\\studio\\NGHM\\xRefreshView\\build\\intermediates\\res\\merged\\debug\\layout\\xrefreshview_footer.xml",
+        "source": "D:\\studio\\NGHM\\xRefreshView\\src\\main\\res\\layout\\xrefreshview_footer.xml"
+    }
+]

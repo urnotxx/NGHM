@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.zzx.haoniu.nghmtaxi.activity.TripDetialActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/activity_trip_detial"
+        android:layout_height="match_parent">
+        <include layout="@layout/common_navigation" />
+
+        <include layout="@layout/layout_xian" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="当前服务"
+            android:textColor="@color/colorGrayText48"
+            android:textSize="15sp" />
+
+        <include layout="@layout/layout_xian" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civHeadTD"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/tvPhoneTD"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text=" "
+                android:textColor="@color/colorGrayText48"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivCallTD"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/img_call" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_xian" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="35dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/img_locg" />
+
+                <TextView
+                    android:id="@+id/tvStartTD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text=" "
+                    android:textColor="@color/colorGrayText28"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/img_locr" />
+
+                <TextView
+                    android:id="@+id/tvEndTD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text=" "
+                    android:textColor="@color/colorGrayText28"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_xian" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="90dp">
+
+                <TextView
+                    android:id="@+id/tvPromptTD"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/kuang_red15"
+                    android:gravity="center"
+                    android:text="右滑 到达目的地 发起收款"
+                    android:textColor="@color/colorRed"
+                    android:textSize="18sp" />
+                <!-- 此处，滑动按钮的父亲组件不能为FrameLayout -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:paddingRight="3dp">
+
+                    <com.zzx.haoniu.nghmtaxi.view.SlidingButton
+                        android:id="@+id/slidingButtonTD"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@mipmap/img_toright"
+                        android:gravity="center" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvCancleTD"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignLeft="@+id/frameLayout"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/frameLayout"
+                android:visibility="gone"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/border_redgray30"
+                android:gravity="center"
+                android:text="取消订单"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

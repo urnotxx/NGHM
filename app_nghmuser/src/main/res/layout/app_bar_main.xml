@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.zzx.haoniu.app_nghmuser.activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rlTop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <RelativeLayout
+                android:id="@+id/rlLeft"
+                android:layout_width="70dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivLeftM"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/img_user" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlRight"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivRightM"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/img_message" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/common_navigation1"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_xian" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/tvMain1"
+            style="@style/mainText"
+            android:text="出租车"
+            android:textColor="@color/colorRed" />
+
+        <TextView
+            android:id="@+id/tvMain2"
+            style="@style/mainText"
+            android:text="快车" />
+
+        <TextView
+            android:id="@+id/tvMain3"
+            style="@style/mainText"
+            android:text="顺风车" />
+
+        <TextView
+            android:id="@+id/tvMain4"
+            style="@style/mainText"
+            android:text="代驾" />
+
+        <TextView
+            android:id="@+id/tvMain5"
+            style="@style/mainText"
+            android:text="公交查询" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_xian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/rlContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

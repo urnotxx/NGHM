@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_owner_authentication"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zzx.haoniu.app_nghmuser.activity.OwnerAuthenticationActivity">
+
+    <include layout="@layout/common_navigation" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_xian" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shap_white_0"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llModifyCarPlateOA"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="驾驶证信息"
+                        android:textColor="@color/colorGrayText28"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/img_jiantou"
+                        android:text="修改"
+                        android:textColor="@color/colorGrayText48"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_xian" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        style="@style/ownerGrayText"
+                        android:text="真实姓名" />
+
+                    <TextView
+                        android:id="@+id/tvNameOA"
+                        style="@style/ownerGrayText1"
+                        android:text=" " />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        style="@style/ownerGrayText"
+                        android:text="驾驶证号" />
+
+                    <TextView
+                        android:id="@+id/tvCarLicenseOA"
+                        style="@style/ownerGrayText1"
+                        android:text=" " />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        style="@style/ownerGrayText"
+                        android:text="驾驶证照" />
+
+                    <TextView
+                        android:id="@+id/tvPicCarPlate"
+                        style="@style/ownerGrayText1"
+                        android:layout_width="wrap_content"
+                        android:text="查看照片" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/img_pic" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shap_white_0"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llModifyTravelCardOA"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="行驶证信息"
+                        android:textColor="@color/colorGrayText28"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/img_jiantou"
+                        android:text="修改"
+                        android:textColor="@color/colorGrayText48"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_xian" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        style="@style/ownerGrayText"
+                        android:text="车牌号码" />
+
+                    <TextView
+                        android:id="@+id/tvCarNumOA"
+                        style="@style/ownerGrayText1"
+                        android:text=" " />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        style="@style/ownerGrayText"
+                        android:text="车辆所有人" />
+
+                    <TextView
+                        android:id="@+id/tvCarBelongOA"
+                        style="@style/ownerGrayText1"
+                        android:text=" " />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        style="@style/ownerGrayText"
+                        android:text="车辆品牌及颜色" />
+
+                    <TextView
+                        android:id="@+id/tvCarBlandOA"
+                        style="@style/ownerGrayText1"
+                        android:text=" " />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        style="@style/ownerGrayText"
+                        android:text="注册日期" />
+
+                    <TextView
+                        android:id="@+id/tvLoginOA"
+                        style="@style/ownerGrayText1"
+                        android:text=" " />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        style="@style/ownerGrayText"
+                        android:text="驾驶证照" />
+
+                    <TextView
+                        android:id="@+id/tvPicTravelOA"
+                        style="@style/ownerGrayText1"
+                        android:layout_width="wrap_content"
+                        android:text="查看照片" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/img_pic" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="65dp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/ownerGrayText"
+            android:layout_width="wrap_content"
+            android:text="驾驶证照" />
+
+        <TextView
+            android:id="@+id/tvAgreementOA"
+            style="@style/ownerGrayText1"
+            android:layout_width="wrap_content"
+            android:text="《合乘协议》"
+            android:textColor="@color/colorRed" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSubmitOA"
+        style="@style/redText"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_redgray0"
+        android:text="提交" />
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_set"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zzx.haoniu.app_nghmuser.activity.SetActivity">
+
+    <include layout="@layout/common_navigation" />
+
+    <RelativeLayout
+        android:id="@+id/rlModifyPwdS"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/grayText"
+            android:text="修改密码" />
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/img_jiantou" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_xian" />
+
+    <RelativeLayout
+        android:id="@+id/rlAddressS"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorWhite"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/grayText"
+            android:text="常用地址" />
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/img_jiantou" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_xian" />
+
+    <RelativeLayout
+        android:id="@+id/rlGuideS"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorWhite"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/grayText"
+            android:text="用户指南" />
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/img_jiantou" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_xian" />
+
+    <RelativeLayout
+        android:id="@+id/rlUpdateS"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/grayText"
+            android:text="版本更新" />
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/img_jiantou" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_xian" />
+
+    <RelativeLayout
+        android:id="@+id/rlAboutS"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/grayText"
+            android:text="关于我们" />
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/img_jiantou" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_xian" />
+
+    <RelativeLayout
+        android:id="@+id/rlLawS"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/grayText"
+            android:text="法律条款" />
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/img_jiantou" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvExitS"
+        style="@style/redText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/border_redgray0"
+        android:text="退出登录" />
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_travel_card_authentication"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zzx.haoniu.app_nghmuser.activity.TravelCardAuthenticationActivity">
+
+    <include layout="@layout/common_navigation" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_xian" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:background="@mipmap/img_jiashizheng" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第二步 行驶证信息"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="保障出行安全，请务必填写本人行驶证资料"
+                        android:textColor="@color/colorGrayText68"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车牌号码"
+                    android:textColor="@color/colorGrayText68"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edPlatNumTC"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shap_tran_5"
+                    android:hint="填写个人真实的车牌号码"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/colorGrayText48"
+                    android:textColorHint="@color/colorGrayText88"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="车辆所有人"
+                    android:textColor="@color/colorGrayText68"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edCarBelongToTC"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shap_tran_5"
+                    android:hint="填写车辆所属人姓名"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/colorGrayText48"
+                    android:textColorHint="@color/colorGrayText88"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="车辆品牌"
+                    android:textColor="@color/colorGrayText68"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edCarBrandTC"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shap_tran_5"
+                    android:hint="填写车辆品牌及颜色"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/colorGrayText48"
+                    android:textColorHint="@color/colorGrayText88"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="行驶证上的注册日期"
+                    android:textColor="@color/colorGrayText68"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvTravelCarTC"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shap_tran_5"
+                    android:gravity="center_vertical"
+                    android:hint="填写行驶证上的注册日期"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/colorGrayText48"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="行驶证照片"
+                    android:textColor="@color/colorGrayText68"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/ivPlatTC"
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shap_tran_5"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvNextTC"
+        style="@style/redText"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_redgray0"
+        android:text="下一步" />
+</RelativeLayout>

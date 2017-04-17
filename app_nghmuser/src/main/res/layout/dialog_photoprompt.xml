@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/img_prompt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请按照例图提交驾驶证（黑本）"
+            android:textColor="@color/colorGrayText68"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="照片要四角对齐，如有模糊、太暗、有遮挡，则不予认证"
+            android:textColor="@color/colorGrayText68"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvUploadPhoto"
+            style="@style/redText"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_redgray0"
+            android:text="上传照片" />
+    </LinearLayout>
+
+</RelativeLayout>

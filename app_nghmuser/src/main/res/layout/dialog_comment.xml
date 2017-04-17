@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="评价"
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/llCancleDC"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/img_cancle" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RatingBar
+            android:id="@+id/ratingBarDC"
+            style="@style/fiveRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:max="5"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="司机服务如何？给个评价吧！"
+            android:textColor="@color/colorRed"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tvCom1DC"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_tragray5"
+                android:gravity="center"
+                android:text="车内整洁"
+                android:textColor="@color/colorGrayText68"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvCom2DC"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_tragray5"
+                android:gravity="center"
+                android:text="活地图认路准"
+                android:textColor="@color/colorGrayText68"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tvCom3DC"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_tragray5"
+                android:gravity="center"
+                android:text="驾驶平稳"
+                android:textColor="@color/colorGrayText68"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvCom4DC"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_tragray5"
+                android:gravity="center"
+                android:text="服务态度好"
+                android:textColor="@color/colorGrayText68"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edCommentDC"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shap_gray_5"
+            android:gravity="center"
+            android:hint="其他想说的(将匿名延迟告诉司机)"
+            android:textColor="@color/colorGrayText48"
+            android:textColorHint="@color/colorGrayText68"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvCommentDC"
+            style="@style/redText"
+            android:layout_marginTop="15dp"
+            android:text="提交" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_jie_dan_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.JieDanDialogActivity">
+    <!-- android:background="@drawable/img_dialogbg"-->
+    <RelativeLayout
+        android:id="@+id/llDialog"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/img_jiedanbg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/img_locg" />
+
+                <TextView
+                    android:id="@+id/tvStartJD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="西湖国际"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/img_locr" />
+
+                <TextView
+                    android:id="@+id/tvEndJD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="三里庵"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/ivPromptJD"
+                android:layout_width="25dp"
+                android:layout_height="7dp"
+                android:background="@mipmap/img_totop" />
+
+            <TextView
+                android:id="@+id/tvPromptJD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="向上滑动查看地图"
+                android:textColor="@color/colorGrayText68"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDistanceJD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="距您1.8公里"
+            android:textColor="@color/colorWhite"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivCloseJD"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/llDialog"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginTop="-10dp"
+        android:layout_toRightOf="@id/llDialog"
+        android:background="@mipmap/img_close" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/llJieDanLeft"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:visibility="gone"
+            android:layout_marginRight="50dp"
+            android:background="@mipmap/img_jiedangreen"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接单"
+                android:textColor="@color/colorWhite"
+                android:textSize="21sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llJiedan"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@mipmap/img_jiedan"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抢单"
+                android:textColor="@color/colorWhite"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/tvTimeJD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

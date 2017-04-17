@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BaseApp">
+        <attr name="pressedColor" format="color" />
+        <attr name="pressedBackground" format="reference" />
+        <attr name="pressedBackgroundColor" format="color" />
+        <attr name="pressedAlpha" format="float" />
+        <attr name="pressedScale" format="float" />
+        <attr name="touchDownAnimation" format="reference" />
+        <attr name="touchUpAnimation" format="reference" />
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowRadius_" format="float" />
+        <attr name="shadowDx_" format="float" />
+        <attr name="shadowDy_" format="float" />
+    </declare-styleable>
+
+</resources>

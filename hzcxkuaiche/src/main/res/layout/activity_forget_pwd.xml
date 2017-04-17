@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zzx.haoniu.hzcxkuaiche.activity.ForgetPwdActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_forget_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_navigation" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/shap_tran_5"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edPhoneFP"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/transparent"
+                android:drawableLeft="@mipmap/img_phone"
+                android:drawablePadding="10dp"
+                android:hint="请输入11位手机号"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorGrayText28"
+                android:textColorHint="@color/colorGrayText68"
+                android:textSize="15sp" />
+
+            <include layout="@layout/layout_xian" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/edCodeFP"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:drawableLeft="@mipmap/img_phone"
+                    android:drawablePadding="10dp"
+                    android:hint="验证码"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorGrayText28"
+                    android:textColorHint="@color/colorGrayText68"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvCodeFP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/border_orggray10"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="获取验证码"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_xian" />
+
+            <EditText
+                android:id="@+id/edPwdFP"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/transparent"
+                android:drawableLeft="@mipmap/img_lock"
+                android:drawablePadding="10dp"
+                android:hint="请设置密码（6~16个字符）"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorGrayText28"
+                android:textColorHint="@color/colorGrayText68"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSubmitFP"
+            style="@style/redText"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/border_redgray0"
+            android:text="确定" />
+
+    </LinearLayout>
+</LinearLayout>
